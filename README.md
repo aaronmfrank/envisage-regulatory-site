@@ -27,7 +27,7 @@ Search the HTML files for these strings — they all need to be updated with rea
 - Bio paragraphs
 
 **Contact page (contact.html):**
-- `hello@envisageconsulting.com` — real email
+- `doreen@envisageregulatory.com` — real email
 - `+1 (XXX) XXX-XXXX` — real phone (or remove the block)
 - `[City, State]` — real location
 
