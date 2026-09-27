@@ -304,33 +304,28 @@ section {
   margin: 0 auto;
 }
 
-/* Two-column layout */
-.two-col {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 5rem;
-  align-items: center;
+/* Approach section */
+.approach-section {
+  text-align: center;
 }
 
-.two-col-image {
-  background: var(--purple-deep);
-  aspect-ratio: 4 / 5;
-  border-radius: 2px;
-  position: relative;
-  overflow: hidden;
+.approach-section h2 {
+  margin-bottom: 1.5rem;
 }
 
-.two-col-image-placeholder {
-  position: absolute;
-  inset: 0;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background: linear-gradient(135deg, var(--purple) 0%, var(--purple-deep) 100%);
-  color: var(--cream-light);
-  font-family: 'Cormorant Garamond', serif;
-  font-size: 2rem;
-  font-style: italic;
+.approach-section p {
+  font-size: 1.08rem;
+  color: var(--ink-soft);
+  max-width: 640px;
+  margin: 0 auto 1rem;
+}
+
+.approach-section .text-link {
+  display: inline-block;
+  margin-top: 0.75rem;
+  font-weight: 500;
+  border-bottom: 1px solid var(--purple);
+  padding-bottom: 2px;
 }
 
 /* Service grid */
@@ -547,31 +542,40 @@ section {
   padding-bottom: 0;
 }
 
-.service-detail-header {
-  display: grid;
-  grid-template-columns: 1fr 2fr;
-  gap: 3rem;
-  margin-bottom: 2rem;
-  align-items: start;
+.service-detail-label {
+  display: flex;
+  align-items: baseline;
+  gap: 0.75rem;
+  margin-bottom: 0.85rem;
 }
 
 .service-detail-number {
   font-family: 'Cormorant Garamond', serif;
-  font-size: 4rem;
+  font-size: 1.35rem;
   font-style: italic;
   color: var(--red);
   line-height: 1;
 }
 
+.service-detail-label .eyebrow {
+  font-size: 1rem;
+  margin-bottom: 0;
+}
+
+.service-detail h2 {
+  margin-bottom: 1.5rem;
+}
+
 .service-detail ul {
   list-style: none;
   padding-left: 0;
+  max-width: 720px;
 }
 
 .service-detail ul li {
   position: relative;
-  padding-left: 1.8rem;
-  margin-bottom: 1rem;
+  padding-left: 1.5rem;
+  margin-bottom: 0.85rem;
   color: var(--ink-soft);
   line-height: 1.65;
 }
@@ -747,7 +751,6 @@ footer {
     padding: 4rem 0;
   }
 
-  .two-col,
   .service-grid,
   .team-grid,
   .team-detail-grid,
@@ -757,12 +760,4 @@ footer {
     gap: 2.5rem;
   }
 
-  .service-detail-header {
-    grid-template-columns: 1fr;
-    gap: 1rem;
-  }
-
-  .service-detail-number {
-    font-size: 3rem;
-  }
 }
